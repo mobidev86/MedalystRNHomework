@@ -1,6 +1,4 @@
 # Project Setup
-
-## Setting Up the Project
 After cloning the repository, follow these steps to get the app running:
 
 ### Install Dependencies
@@ -33,6 +31,26 @@ Start the app on the appropriate device using one of these commands:
 
 ---
 
+### Setting Up Jest
+Follow these steps to set up Jest for testing in your project:
+
+1. **Install Jest and Required Dependencies:**
+   ```sh
+   yarn install --save-dev jest @testing-library/react-native @testing-library/jest-native react-test-renderer
+   ```
+
+2. **Configure Jest in `jest.config.js`:**
+   Add the following section if it doesn’t exist:
+   ```
+   module.exports = {
+     preset: 'react-native',
+   };
+   ```
+3. **Run Jest Tests:**
+   ```sh
+   npm test
+   ```
+
 ## Running Unit Tests
 We’ve written unit tests for the API and the Character List. Run them using these commands:
 
@@ -53,6 +71,12 @@ The SWAPI (Star Wars API) uses a fixed pagination system where each API request 
 **Note:** Since SWAPI does not support custom pagination, this feature has not been implemented in the practical task.
 
 ---
+
+## Practical Task Video
+For a video of the practical , please visit the Task Video:
+
+[Task Video](https://drive.google.com/file/d/12s4zt4qA9NuIN_iQ2euaZD-4EtoIEd-7/view?usp=sharing)
+
 
 ## Project Documentation
 For a more detailed overview of the project, please visit the documentation:
